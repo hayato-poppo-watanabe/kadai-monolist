@@ -39,17 +39,41 @@ footer {
 }
 .cover .cover-inner .cover-contents h1 {
     margin: 0 0 20px 0;
-    color: #fff;
+    color: #fffffb;
     font-weight: bold;
     letter-spacing: 0.15em;
 }
 .cover .cover-inner .cover-contents h2 {
     margin: 0 0 15px 0;
-    color: #fff;
+    color: #fffffb;
     font-weight: bold;
     letter-spacing: 0.15em;
 }
 .cover .btn-success {
-    background-color: #ed486c;
-    border-color: #ed486c;
+    background-color: #ea786c;
+    border-color: #ea786c;
+}
+
+/* search */
+.search {
+    margin-bottom: 20px;
+}
+
+/* item */
+.item .panel-body {
+    height: 70px;
+}
+.item .panel-heading {
+    height: 250px;
+}
+.item .panel-heading img {
+    height: 100%;
+    max-width: 100%;
+}
+p .item-title {
+    /* Keep the number of lines in a sentence on two lines, and add "..." to the end of line. */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
