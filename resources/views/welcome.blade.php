@@ -5,12 +5,13 @@
         <div class="cover-inner">
             <div class="cover-contents">
                 <h1>素敵なモノと出会える場所</h1>
-                <a href="" class="btn btn-info btn-lg">モノリストをスタート</a>
+                <h2>買い物をもっと楽しく</h2>
+                <a href="" class="btn btn-warning btn-lg">モノリストをスタート</a>
             </div>
         </div>
     </div>
 @endsection
 
 @section('content')
-    テスト
+    ㈫って憂鬱だよね
 @endsection

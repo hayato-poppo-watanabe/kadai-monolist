@@ -43,6 +43,12 @@ footer {
     font-weight: bold;
     letter-spacing: 0.15em;
 }
+.cover .cover-inner .cover-contents h2 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
 .cover .btn-success {
     background-color: #ed486c;
     border-color: #ed486c;
