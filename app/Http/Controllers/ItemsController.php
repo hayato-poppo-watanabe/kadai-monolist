@@ -1,6 +1,12 @@
- use \App\Item;
+<?php
 
-  class ItemsController extends Controller
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use \App\Item;
+
+class ItemsController extends Controller
   {
 
     public function create()

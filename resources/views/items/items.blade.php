@@ -1,18 +1,18 @@
-@extends('layouts.app')
-
-@section('content')
-    <div class="search">
-        <div class="row">
-            <div class="text-center">
-                {!! Form::open(['route' => 'items.create', 'method' => 'get', 'class' => 'form-inline']) !!}
-                    <div class="form-group">
-                        {!! Form::text('keyword', $keyword, ['class' => 'form-control input-lg', 'placeholder' => 'キーワードを入力', 'size' => 40]) !!}
+@if ($items)
+    <div class="row">
+        @foreach ($items as $item)
+            <div class="item">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">
+                            <img src="{{ $item->image_url }}" alt="">
+                        </div>
+                        <div class="panel-body">
+                            <p class="item-title"><a href="#">{{ $item->name }}</a></p>
+                        </div>
                     </div>
-                    {!! Form::submit('商品を検索', ['class' => 'btn btn-success btn-lg']) !!}
-                {!! Form::close() !!}
+                </div>
             </div>
-        </div>
+        @endforeach
     </div>
-
-    @include('items.items', ['items' => $items])
-@endsection
+@endif
