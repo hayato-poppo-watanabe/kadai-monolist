@@ -15,5 +15,6 @@
 @endsection
 
 @section('content')
-    ㈫って憂鬱だよね
+     @include('items.items')
+    {!! $items->render() !!}
 @endsection
