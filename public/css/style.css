@@ -79,7 +79,8 @@ p .item-title {
 }
 
 .item .panel-body {
-height: 120px;
+height: 200px;
+font-size: 12px;
 }
 .item .buttons form {
 display: inline-block;
